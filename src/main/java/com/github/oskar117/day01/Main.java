@@ -58,6 +58,7 @@ public class Main {
             var result = input.stream().map((word) -> {
                 String[] chars = word.split("");
                 StringBuilder res = new StringBuilder();
+                //Mozna wywalić ten rak dzięki replaceAll -_- + character.isDigit
                 for (int x = 0; x < chars.length; x++) {
                     String buffer = "";
                     for (int y = x; y < chars.length; y++) {
